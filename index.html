@@ -1,0 +1,119 @@
+<!--Create a new website using HTML and Bootstrap. 
+The website must include the following:
+1. At least 2 pages.
+2. A Bootstrap navbar, 
+3. table, and 
+4. form.
+5. Bootstrap grid used throughout to format elements
+6. Elements should stack vertically when the window is small-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals 2 Go</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="bg-success-subtle">
+    <h1 class="bg-secondary text-center mt-2 mb-2 py-4">Welcome to Meals 2 Go</h1>
+
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-sm mb-5 bg-body-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Options
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="plans.html">Plans</a></li>
+                            <li><a class="dropdown-item" href="plans.html">Diet Descriptions</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact Form</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center mb-5 fs-2">
+
+        <div class="container mb-5 fs-5 border border-success p-2 mb-2 border-opacity-50">
+            <p class="text-center fw-light fst-italic">
+                At Meals 2 Go, we understand that today's busy lifestyles can be hectic. This can require people to make
+                last-minute decisions and shortcuts. Often times, the first place we cut is from a healthy diet. <br>
+                Meals 2 Go
+                is a solution that allows people on a variety of lifestyle diets to have healthy, delicious options
+                available and ready to cook. No more fast food lines on a long work day. <br> Just pull a pre-made meal
+                from
+                the
+                fridge, cook, and serve!
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div id="card-1" class="card bg-secondary">
+                    <img src="images/easyprep.jpeg" class="card-img-top" alt="One pan easy prep" width="100" />
+                    <div class="card-body">
+                        <h5 class="card-title">Fast & Easy</h5>
+                        <a href="plans.html" class="btn btn-outline-light btn-lg">More Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div id="card-2" class="card bg-secondary">
+                    <img src="images/keto.jpeg" class="card-img-top" alt="Photo Keto" width="100" />
+                    <div class="card-body">
+                        <h5 class="card-title">Keto</h5>
+                        <a href="plans.html" class="btn btn-outline-light btn-lg">More Info</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3">
+                <div id="card-3" class="card bg-secondary">
+                    <img src="images/paleo.jpeg" class="card-img-top" alt="Photo paleo" width="100" />
+                    <div class="card-body">
+                        <h5 class="card-title">Paleo</h5>
+                        <a href="plans.html" class="btn btn-outline-light btn-lg">More Info</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3">
+                <div id="card-4" class="card bg-secondary">
+                    <img src="images/vegan.jpeg" class="card-img-top" alt="Photo vegan" width="100" />
+                    <div class="card-body">
+                        <h5 class="card-title">Vegan</h5>
+                        <a href="plans.html" class="btn btn-outline-light btn-lg">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--this script is needed to make dropdown in navbar function correctly. I searched for this solution after reading documentation on Bootstrap for dropdowns https://getbootstrap.com/docs/5.3/components/dropdowns/-->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
